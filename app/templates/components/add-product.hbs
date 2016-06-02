@@ -1,0 +1,26 @@
+
+<form action="">
+	<div class="form-group">
+		<label for="productName">Name</label>
+		{{input type="text" class="form-control f1" name="productName" value=d.productTitle placeholder="Add Name" action="updateStorage" on="key-up"}}
+	</div>
+
+	<div class="form-group">
+		<label for="productImg">Product Image</label>
+		{{#if d.productImg}}
+			<img src="{{d.productImg}}" class="f2" value=d.productImg width="300">
+		{{/if}}
+
+		{{ file-input fileChanged="fileSelectionChanged"}}
+
+	</div>
+
+	<div class="form-group">
+		<label for="productDetail">Detail</label>
+		{{input type="text" class="form-control f3" name="productDetail" value=d.productDetail placeholder="Add Detail" action="updateStorage" on="key-up"}}
+	</div>
+	
+	<button {{action 'addProduct'}} class="btn btn-primary">Submit</button>
+	
+</form>
+
