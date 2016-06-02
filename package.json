@@ -1,6 +1,6 @@
 {
   "name": "ember-product-list",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Small description for ember-product-list goes here",
   "private": true,
   "directories": {
@@ -16,7 +16,7 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Mikul Gohil",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
