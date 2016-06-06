@@ -21,7 +21,7 @@ export default Ember.Route.extend({
 
   actions:{
   	submitHelp:function(){
-  		Console.log("Submit happend");
+  		console.log("Submit happend");
   	}
   }
 

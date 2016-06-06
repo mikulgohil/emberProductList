@@ -5,6 +5,7 @@
 		<th>Product Name</th>
 		<th>Product Image</th>
 		<th>Product Detail</th>
+		<th>Events</th>
 	</tr>
 </thead>
 <tbody>
@@ -16,6 +17,8 @@
 		<td>
 			{{product.productDetail}}
 		</td>
+		<td>{{#link-to 'edit' product.id}}<button class="btn btn-primary">Edit</button>{{/link-to}}</td>
+		<td><button {{action 'deleteItem' product.id }} class="btn btn-danger">Delete</button></td>
 	</tr>
 	{{/each}}	
 </tbody>	
